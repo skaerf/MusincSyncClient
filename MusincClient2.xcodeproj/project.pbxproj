@@ -38,6 +38,7 @@
 /* Begin PBXFileReference section */
 		2680070E2943BBE500554EAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		2680070F2943BE7600554EAF /* Socket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Socket.swift; sourceTree = "<group>"; };
+		268B96792943D36600E0FF3F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		268C0734294246FF0054EED7 /* MusincClient2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusincClient2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		268C0737294246FF0054EED7 /* MusincClient2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusincClient2App.swift; sourceTree = "<group>"; };
 		268C0739294246FF0054EED7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -82,6 +83,7 @@
 		268C072B294246FF0054EED7 = {
 			isa = PBXGroup;
 			children = (
+				268B96792943D36600E0FF3F /* README.md */,
 				268C0736294246FF0054EED7 /* MusincClient2 */,
 				268C0747294247030054EED7 /* MusincClient2Tests */,
 				268C0751294247040054EED7 /* MusincClient2UITests */,
@@ -153,7 +155,6 @@
 				E8B5AB8BDCF160A234A47CCD /* Pods-MusincClient2.debug.xcconfig */,
 				A43CF2BC7E85D2B38055582C /* Pods-MusincClient2.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
