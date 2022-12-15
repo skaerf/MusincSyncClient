@@ -11,9 +11,10 @@ var country: String = ""
 
 
 struct ContentView: View {
+    @State private var showingAccountSheet = false
     var body: some View {
         VStack {
-            TabView(selection: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Selection@*/.constant(1)/*@END_MENU_TOKEN@*/) {
+            TabView() {
                     Text("Musinc")
                         .font(.largeTitle)
                         .fontWeight(/*@START_MENU_TOKEN@*/.heavy/*@END_MENU_TOKEN@*/)
@@ -27,10 +28,14 @@ struct ContentView: View {
                 List {
                     HStack() {
                         Button(action: {
-                            print("booton")
+                            print("account button")
+                            showingAccountSheet.toggle()
                         }, label: {
                             Label("Account", systemImage: "person.crop.circle.fill").labelStyle(accLabelStyle())
                         })
+                        .sheet(isPresented: $showingAccountSheet) {
+                                    AccountView()
+                                }
                     }.frame(height: 100.0)
                     HStack {
                         Button("Connect to Server") {
@@ -71,5 +76,11 @@ struct accLabelStyle: LabelStyle {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+
+struct AccountView: View {
+    var body: some View {
+        Text("Example")
     }
 }
